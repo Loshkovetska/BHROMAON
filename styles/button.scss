@@ -1,0 +1,46 @@
+.button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-family: $secondary-font;
+  color: $main-color;
+  text-align: center;
+  background-color: $main-button-color;
+  border: 2px solid transparent;
+
+  &--search {
+    width: 150px;
+    height: 60px;
+    border-color: #ffffff;
+
+    @include flex(row, flex-end, center);
+
+    .button__icon {
+      padding: 0 15px;
+    }
+
+    @media screen and (max-width: 1110px) {
+      width: 55px;
+
+      .button__text {
+        display: none;
+        padding: 0;
+      }
+    }
+  }
+
+  &--scroll {
+    font-size: 14px;
+    letter-spacing: 3px;
+    background: transparent;
+    text-decoration: none;
+
+    &::after {
+      display: block;
+      content: url("../img/svg/angle-down-circle.svg");
+      margin-top: -3px;
+    }
+  }
+}

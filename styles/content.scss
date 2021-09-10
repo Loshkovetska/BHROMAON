@@ -1,0 +1,67 @@
+.content {
+  @include section-bg("../img/png/header-bg.png");
+
+  &__container {
+    @include basic-container-style;
+    @include flex(column, "", center);
+  }
+
+  &__logo {
+    margin: 265px 0 7px;
+  }
+
+  &__text {
+    color: $main-color;
+    font-size: 22px;
+    letter-spacing: 5px;
+    text-align: center;
+    padding-left: 4px;
+  }
+
+  &__form {
+    width: 650px;
+    height: 60px;
+    margin-top: 48px;
+    display: flex;
+  }
+
+  &__scroll {
+    margin: 115px 0 120px;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  .content {
+    &__container {
+      width: 75%;
+    }
+
+    &__form {
+      width: 555px;
+    }
+  }
+}
+
+@media screen and (max-width: 743px) {
+  .content {
+    &__container {
+      width: 90%;
+    }
+
+    &__form {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 394px) {
+  .content {
+    &__text {
+      margin-top: 5px;
+      font-size: 18px;
+      letter-spacing: 5px;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.header {
+  width: 100%;
+  height: 820px;
+  @include flex(column);
+
+  &__content {
+    width: 100%;
+    height: 740px;
+  }
+
+  &__navigation {
+    width: 100%;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  .header {
+    margin-bottom: -80px;
+    &__content {
+      order: 2;
+    }
+
+    &__navigation {
+      order: 1;
+    }
+  }
+}

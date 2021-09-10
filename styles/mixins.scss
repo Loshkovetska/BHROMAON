@@ -1,0 +1,24 @@
+@mixin flex($direction, $jcontent: "", $aitems: null) {
+  display: flex;
+  flex-direction: $direction;
+
+  @if ($jcontent!= "") {
+    justify-content: $jcontent;
+  }
+
+  @if ($aitems!=null) {
+    align-items: $aitems;
+  }
+}
+
+@mixin section-bg($path, $position: null) {
+  background-image: url($path);
+  background-size: cover;
+  background-position: $position;
+}
+
+@mixin basic-container-style {
+  max-width: 1110px;
+  width: 62.7%;
+  margin: 0 auto;
+}

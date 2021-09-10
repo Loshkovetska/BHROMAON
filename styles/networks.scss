@@ -1,0 +1,17 @@
+.networks {
+  &__link {
+    color: $main-color;
+  }
+
+  &__item {
+    margin-right: 25px;
+
+    &--hover .networks__link {
+      color: $icon-hover-color;
+    }
+  }
+
+  & &__item:last-child {
+    margin-right: 0;
+  }
+}

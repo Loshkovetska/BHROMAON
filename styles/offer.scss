@@ -1,0 +1,48 @@
+.offer {
+  width: 100%;
+  margin-bottom: -1px;
+
+  &--first {
+    @include section-bg("../img/png/offer-1.png");
+  }
+
+  &--second {
+    @include section-bg("../img/png/offer-2.png");
+
+    .offer__container {
+      @include flex(row, flex-end);
+    }
+  }
+
+  &__container {
+    @include basic-container-style;
+    padding: 230px 0 100px;
+  }
+
+  &__info {
+    width: 540px;
+    background-color: rgba(35, 35, 35, 0.8);
+    padding: 50px 17px 50px 30px;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  .offer {
+    &__container {
+      width: 75%;
+    }
+  }
+}
+
+@media screen and (max-width: 743px) {
+  .offer {
+    &__container {
+      width: 90%;
+      padding: 100px 0;
+    }
+
+    &__info {
+      width: 100%;
+    }
+  }
+}

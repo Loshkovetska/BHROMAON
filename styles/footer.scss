@@ -1,0 +1,30 @@
+.footer {
+  width: 100%;
+  background-color: #232323;
+
+  &__container {
+    @include basic-container-style;
+    padding: 120px 0 50px;
+    @include flex(column, "", center);
+
+    @media screen and (max-width: 1110px) {
+      padding-top: 50px;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    margin-bottom: 27px;
+    font-size: 16px;
+    color: $main-color;
+    letter-spacing: 1px;
+  }
+
+  &__networks {
+    display: flex;
+    justify-content: center;
+  }
+}

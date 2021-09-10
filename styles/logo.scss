@@ -1,0 +1,22 @@
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: $main-color;
+
+  &--big {
+    font-size: 48px;
+    letter-spacing: 3px;
+    text-align: center;
+    padding-left: 5px;
+
+    @media screen and (max-width: 394px) {
+      font-size: 40px;
+      margin-bottom: 5px;
+    }
+  }
+
+  &--middle {
+    letter-spacing: 3px;
+  }
+}
